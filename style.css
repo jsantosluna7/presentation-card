@@ -1,0 +1,71 @@
+/*Reinciar todos los valores de la pagina*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111111;
+}
+
+
+/*Forma de la carta principal*/
+.card{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    background: url(imagen/chico.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+/*Overlay*/
+.card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 123, 0, 0.8);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 18px;
+}
+
+.card:hover .overlay{ opacity: 1;}
+
+/*Button*/
+
+.card .btn{
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px #fff solid;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.card .btn:hover {
+    transition: 0.5s;
+    background: rgba(255,255,255,0.3);
+}
+
+/*Hover efects*/
+
+.card .btn, .card h1{
+    transition: 0.3s;
+    transform: translateY(-20px);
+}
+.card:hover .btn, .card:hover h1{
+    transform: translateY(0);
+}
