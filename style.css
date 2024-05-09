@@ -18,7 +18,7 @@ body{
     height: 25em;
     position: relative;
     margin: 0 1em;
-    background: url(imagen/chico.jpg) center;
+    background: url(img/chico.jpg) center;
     background-size: cover;
     color: #fff;
     border-radius: 18px;
